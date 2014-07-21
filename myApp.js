@@ -10,7 +10,7 @@ angular.module('myApp', [])
 	.controller('myController', ['counter', '$scope', function(counter, $scope) {
 		var c = counter();
 		var d = counter();
-		console.log(c==d)
+		console.log(c===d);
 		$scope.a = c();
 		$scope.b = d();
 		$scope.incrementa = function() {
